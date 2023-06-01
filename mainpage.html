@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MINESWEEPER</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  </head>
+  
+  <body>
+    <section>
+      <article>
+        <h1>MINESWEEPER</h1>
+        <div id="board"></div>
+        <script src="mines.js"></script>
+      <nav>
+        <ul>
+          <li onclick="window.location.reload();">New Game</li>
+          <br>
+          <li onclick="timer()">ONE minut to live.</li>
+          <br>
+          <li><a href="https://www.instructables.com/id/How-to-play-minesweeper/">How to play?</a></li>
+          <br>
+          <li><a href="mainpage.html">Easy</a></li>
+          <br>
+          <li><a href="mainpage2.html">Normal</a></li>
+          <br>
+          <li><a href="mainpage3.html">Hard</a></li>
+        </ul>
+      </nav>
+      </article>
+    </section>
+    <footer>
+      <p>&copy;Copyright: Logic of game:WebDevJunkie, Style and other: Stefan Jovic.</p>
+    </footer>
+    
+    <script>
+      function timer(){
+       var time = setTimeout(function() {alert("YOU ARE SLOW, NOT AS USUAL, TIME TO START NEW GAME! "); } , 60000);
+
+      }
+    </script>
+  </body>
